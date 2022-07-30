@@ -1,0 +1,152 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<title>Responsive Portfolio Website</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="js/custom.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	</head> 
+	<body>
+		 <header>
+			<nav>
+				<div class="logo">PORTFO<span>LIO</span></div>
+				<div class="menu">
+					<a href="#">Home</a>
+					<a href="#about">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#services">Services</a>
+					<a href="#contact">Contact</a>
+					
+				</div>
+			</nav>
+			<div class="text">
+				<p>Hello, I am</p>
+				<h1>Pawan Agrahari</h1>
+				<p>And I am a Final Year UG Student</p>
+				<button class="c-btn">Hire me</button>
+			</div>
+		</header>
+			<section id="about">
+				<div class="section-info">
+					<h1>About</h1>
+					<p>Who i am?</p>
+				</div>
+				<div class="about-row">
+					<div class="about-left-col">
+						<img src="images/about.jpg">
+					</div>
+					<div class="about-right-col">
+						<p id="p-title">
+							Hello, I'm Pawan Agrahari & I'm a Final Year UG Student
+						</p>
+						<p>
+							Currently I am doing B.E. in Electrical Engineering from Jadavpur University, Kolkata.
+						</p>
+						<button class="c-btn">Download Resume</button>
+					</div>
+				</div>
+			</section>
+			<section id="skills">
+				<div class="section-info">
+					<h1>Skill's</h1>
+					<p>Which I Have</p>
+				</div>
+				<div class="skills-row">
+						<div class="skills-left-col">
+						<p>
+							Currently I am doing B.E. in Electrical Engineering from Jadavpur University, Kolkata.
+						</p>
+						<button class="c-btn">Read more</button>
+						</div>
+						<div class="skills-right-col">
+							<div class="progress-div">
+								<p>
+									<span>HTML</span><br>
+									<progress value="80" max="100">
+									<span>80%</span>
+								</p>
+								<p>
+									<span>CSS</span><br>
+									<progress value="70" max="100">
+									<span>70%</span>
+								</p>
+								<p>
+									<span>JavaScript</span><br>
+									<progress value="60" max="100">
+									<span>60%</span>
+								</p>
+							</div>
+						</div>
+				</div>
+			</section>
+			<section id="services">
+				<div class="section-info">
+					<h1>Services</h1>
+					<p>Which I can use</p>
+				</div>
+				<div class="services-row">
+					<div class="services-box" data-tilt>
+						<img src="images/b2.png">
+						<h2>Web Development</h2>
+						<p>
+							Web Development require html,css,javascript....
+						</p>
+			
+			        </div>
+			        <div class="services-box" data-tilt>
+						<img src="images/b2.png">
+						<h2>Apps Development</h2>
+						<p>
+							Apps Development require html,css,javascript....
+						</p>
+			
+			        </div>		
+				</div>
+			</section>
+			<section id="contact">
+				<div class="section-info" style="color: white;">
+					<h1>Get in Touch</h1>
+					<p style="color: 
+					black">We are Available</p>
+				</div>
+				<div class="contact-row">
+					<div class="contact-left-col">
+					 <img src="images/b3.png">
+					</div>
+					<div class="contact-right-col">
+						<form action="" id="Portfolio">
+							<h2>Connect With Us</h2>
+							<input type="text" id="name" placeholder="Name">
+							<input type="email" id="emailid"  placeholder="E-mail">
+							<br>
+							<textarea id="msgContent" cols="40" rows="10" placeholder="Message"></textarea>
+							<br>
+							<button class="c-btn">Submit</button>
+						</form>
+						
+					</div>
+				</div>
+			</section>
+			<section id="footer">
+				<h2>Developed by<br> Pawan Agrahari</h2>
+                <img src="images/icon.png" width="100">
+			</section>
+
+			<script src="js/jquery.ripples-min.js"></script>
+			<script>
+				jQuery(document).ready(function(){
+					$('header').ripples({
+                    dropRadius:20,
+                    perturbance:0.03,
+                });
+				 });
+			</script>
+			<script src="js/tilt.jquery.min.js"></script>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+		    <script src="./mail.js"></script>
+	</body>
+</html>
